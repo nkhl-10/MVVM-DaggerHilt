@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "mvvm.app.dragerhill"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "mvvm.app.dragerhill"
@@ -58,11 +58,11 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
 //    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
 
-    implementation ("com.google.dagger:hilt-android:2.32-alpha")
-    kapt ("com.google.dagger:hilt-compiler:2.32-alpha")
+    implementation ("com.google.dagger:hilt-android:2.50")
+    kapt ("com.google.dagger:hilt-compiler:2.50")
     implementation ("androidx.activity:activity-ktx:1.8.2")
 
-    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+//    implementation ("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
 
     //retrofit
     implementation ("com.google.code.gson:gson:2.10.1")

@@ -20,7 +20,8 @@ class RvAdapter
     }
 
     override fun onBindViewHolder(holder: RvAdapter.MyAdapter, position: Int) {
-        binding.textView.text = list[position].body
+        binding.title.text = list[position].title
+        binding.body.text = list[position].body
     }
 
     override fun getItemCount(): Int =list.size

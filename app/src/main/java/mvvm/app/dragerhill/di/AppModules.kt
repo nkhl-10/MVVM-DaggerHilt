@@ -25,7 +25,7 @@ object AppModules {
     //NKHL_9
     @Provides
     @Singleton
-    fun apiService(url: String): ApiInterface =
+    fun providesApiService(url: String): ApiInterface =
         Retrofit.Builder().baseUrl(url)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

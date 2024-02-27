@@ -3,6 +3,7 @@ package mvvm.app.dragerhill.ui.actvity.main
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.HiltAndroidApp
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.catch
@@ -13,7 +14,7 @@ import javax.inject.Inject
 
 //NKHL_12
 
-@HiltAndroidApp
+@HiltViewModel
 class MainVM
 @Inject
     constructor(
